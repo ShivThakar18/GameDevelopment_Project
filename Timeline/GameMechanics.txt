@@ -1,0 +1,22 @@
+Game Mechanics 
+  │
+  ├── Hobbies
+  │     ├── Player Choice
+  │     ├── Each hobby can be chosen by the player. You can only have up to a certain number of hobbies.
+  │     ├── More hobby slots can be unlocked as you get older, but you have to make a choice on what hobbies to keep and discard
+  |
+  ├── Interests
+  │     ├── Story Unlocks
+  │     ├── Interests are traits SHIV will gain while making various decisions. When creating specific choices, Interests will 
+  │     ├── automatically be added to SHIV. This can unlock more paths and dialouge options. But be careful, if you don't keep using 
+  │     ├── your Interests in dialouge or gameplay, the Interest be lost. 
+  │     ├── An Interest can also be regained and rediscovered, if the right choices are created in the feature. 
+  │     ├── As SHIV gets older, you can unlock Inter-Lock , this will let you permanantly keep an Interest no matter what.
+  │     │ 
+  ├── Relationships
+  │     ├── Relationships are how the characters around you feel about you. Listed as a relationship status and emotion towards you. 
+  │     ├── The way you talk to them will decide your relationship.
+  |
+  ├── Canon Events
+  │     ├── Canon Events will occur in every Life Path and Timeline. This just means that the odds were against you and this was MEANT TO HAPPEN
+  │     ├── This can be meeting people, getting a job, relationship changes with friends and family. 

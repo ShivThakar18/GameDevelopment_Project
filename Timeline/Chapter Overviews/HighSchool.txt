@@ -1,0 +1,36 @@
+Start ├── Initial Dream Was to Become a Lawyer
+  |
+  ├── Grade 9: Join Clubs with Friends (DECA + Concert Band + Robotics)
+  │     ├── Grade 10: Choosing Classes → Computer Science [Engineering Life Path]
+  │     │     ├── Grade 11: Become interested in Engineering and Computer Science, [Gain Interest in Programming]
+  │     │     └── Grade 12: Join Robotics, Apply to Engineering/CS Schools
+  │     |
+  │     ├── Grade 10: Choosing Classes → Law [Law Life Path]
+  │     |     ├── Grade 11: Take Multiple Law Classes, [Gain Interest in True Crime]
+  │     │     └── Grade 12: Undergraduate Degree Choice (Business or Engineering)
+  │     |
+  │     ├── Grade 10: Choosing Classes → Biology [Medical Life Path]
+  │     │     ├── Grade 11: Gain Interest in Human Anatomy and Biology 
+
+
+Canon Events
+  |
+  ├── If DECA is Choosen for all four years of High School, you will become president of the Clubs
+  |
+  ├── If Law is chosen again in Grade 11, Law Life Path will be created and available to be [Unlocked]
+  │     └── For an undergraduate degree, you can choose between Engineering and Business
+  |
+  ├── If Music Hobby is not selected, you will drop interest in Concert Band + Playing Guitar
+  |
+  
+Hobbies/Interests Unlockable at Various Points (Can Choose Up to 3 Hobbies and 2 Interests)
+  |
+  ├── Hobbies
+  |     ├── [Unlocked Grade 10] Gyming - you are overweight, and family is trying to convince you to get in shape
+  │     ├── [Unlocked Grade 9] Gaming - been watching your friend play games, and bought a PS4 to get into the hobby (YOU LOVE IT)
+  │     ├── [Unlocked Grade 9] Music - you love playing the guitar and want to keep practices to get better
+  │     ├── [Unlocked Grade 11] Photography - you want to see the beauty the world has to offer 
+  │
+  ├── Interests
+  │     ├── [Unlocked with Law Life Path] True Crime - you love to see the mind and psychology of true crime
+  │     ├── [Unlocked with CS Life Path] Programming - you found a way to solve problems in a fun way, you really understand how code works 
