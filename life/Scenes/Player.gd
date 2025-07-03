@@ -7,11 +7,14 @@ var player_animatedSprite: AnimatedSprite2D
 var last_dir: String = "front"
 var last_speed: String = "walk"
 
+var player_in_area = false
+
+@export var target_room: String
+
 func _ready() -> void:
 	player_animatedSprite = $Player_AnimatedSprite2D
 	if player_animatedSprite == null:
 		push_error("❌ Cannot find AnimatedSprite2D! Check the node name.")
-	
 
 func _physics_process(delta: float) -> void:
 	var dir = Vector2.ZERO
@@ -56,4 +59,19 @@ func _physics_process(delta: float) -> void:
 		move_and_slide()
 		player_animatedSprite.play("player_idle_"+last_dir)
 
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.name == "Player":
+		player_in_area = true
+	print(player_in_area)
+
+	if player_in_area and Input.is_action_just_pressed("interact"):
+		get_tree().change_scene_to_file("res://Scenes/"+target_room+".tscn")
+
+func _on_door_classroom_1_body_exited(body: Node2D) -> void:
+	if body.name == "Player":
+		player_in_area = false # Replace with function body.
+	print(player_in_area)
 	
+func _process(delta):
+	if player_in_area and Input.is_action_just_pressed("interact"):
+		get_tree().change_scene_to_file("res://Scenes/"+target_room+".tscn")
