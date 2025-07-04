@@ -19,7 +19,7 @@ func _input(event):
 func _ready() -> void:
 	player_animatedSprite = $Player_AnimatedSprite2D
 	if player_animatedSprite == null:
-		push_error("❌ Cannot find AnimatedSprite2D! Check the node name.")
+		push_error("Cannot find AnimatedSprite2D! Check the node name.")
 		
 func _physics_process(delta: float) -> void:
 	var dir = Vector2.ZERO
