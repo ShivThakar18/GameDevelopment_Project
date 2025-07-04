@@ -9,13 +9,18 @@ var last_speed: String = "walk"
 
 var player_in_area = false
 
-@export var target_room: String
+@export var target_scene: String
+@export var target_spawn_id: String
+
+func _input(event):
+	if event is InputEventKey and event.pressed:
+		print("Key Pressed: ", event.as_text())
 
 func _ready() -> void:
 	player_animatedSprite = $Player_AnimatedSprite2D
 	if player_animatedSprite == null:
 		push_error("❌ Cannot find AnimatedSprite2D! Check the node name.")
-
+		
 func _physics_process(delta: float) -> void:
 	var dir = Vector2.ZERO
 	if Input.is_action_pressed("ui_right"):
@@ -59,19 +64,16 @@ func _physics_process(delta: float) -> void:
 		move_and_slide()
 		player_animatedSprite.play("player_idle_"+last_dir)
 
-func _on_area_2d_body_entered(body: Node2D) -> void:
+
+func _on_door_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
 		player_in_area = true
-	print(player_in_area)
 
-	if player_in_area and Input.is_action_just_pressed("interact"):
-		get_tree().change_scene_to_file("res://Scenes/"+target_room+".tscn")
 
-func _on_door_classroom_1_body_exited(body: Node2D) -> void:
+func _on_door_classroom_1_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
-		player_in_area = false # Replace with function body.
-	print(player_in_area)
-	
-func _process(delta):
+		player_in_area = true
+
+func _process(delta: float) -> void:
 	if player_in_area and Input.is_action_just_pressed("interact"):
-		get_tree().change_scene_to_file("res://Scenes/"+target_room+".tscn")
+		SceneManager.load_scene(target_scene,target_spawn_id)
